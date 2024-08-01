@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fashion_World E-commerce</title>\
+	<script src="https:\\kit.fontawesome.com/b77a2354ea.js" crossorigin="anonymous"></script>
+</head>
+<style>
+	.nav{
+		position: sticky;
+		top: 0;
+		background-color: black;
+		height: 70px;
+	}
+	ul,li{
+		display: inline;
+		padding: 20px;
+
+	}
+	a{
+		color: whitesmoke;
+		text-decoration: none;
+	}
+	input{
+		font-size: 15px
+	}
+	.tf{
+		height: 390px;
+		width:400px;
+		background-color: beige;
+		margin-left: 40px;
+		margin-top: 430px;
+		transform: translate(0%,0%);
+
+	}
+	.tf2{
+		background-color: beige;
+		height:400px;
+		width: 400px;
+		margin-left: 3px;
+		margin-top: 30px;
+
+	}
+	.tf3{
+		background-color: beige;
+		height: 390px;
+		width: 400px;
+		margin-top: 30px;
+		margin-left: 3px;
+		transform: translate(100%,-215%);
+	}
+	.tf4{
+		background-color: beige;
+		height: 400px;
+		width: 400px;
+		margin-top: 30px;
+		margin-left: 3px;
+		/*transform: translate(80%,-243%);*/
+	}
+	.tf5{
+		background-color: beige;
+		height: 390px;
+		width: 400px;
+		margin-left: 3px;
+		margin-top: 30px;
+		transform: translate(100%,-209%);
+	}
+	.tf6{
+		background-color: beige;
+		height: 400px;
+		width: 400px;
+		margin-top: 40px;
+		margin-left: 3px;
+	}
+	.tf7{
+		height: 390px;
+		width:400px;
+		background-color: beige;
+		margin-left: 40px;
+		margin-top: 400px;
+		transform: translate(-213%,-90%);
+
+	}
+	.tf8{
+		height: 390px;
+		width: 400px;
+		background-color: beige;
+		margin-top: 400px;
+		margin-left: 3px;
+		transform: translate(101%,-199%);
+	}
+	.tf9{
+		height: 390px;
+		width: 400px;
+		background-color: beige;
+		margin-top: 400px;
+		margin-left: 3px;
+		transform: translate(101%,-198%);
+	}
+	.tf10{
+		height: 390px;
+		width: 400px;
+		background-color: beige;
+		margin-top: 420px;
+		margin-left: 40px;
+		transform: translate(-213%,-100%);
+	}
+	.tf11{
+		height: 390px;
+		width: 400px;
+		background-color: beige;
+		margin-top: 420px;
+		margin-left: 3px;
+		transform: translate(101%,-206%);
+	}
+	.tf12{
+		height: 390px;
+		width: 400px;
+		background-color: beige;
+		margin-top: 420px;
+		margin-left: 3px;
+		transform: translate(101%,-206%);
+	}
+	
+
+</style>
+<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background: #34495e;
+		}
+		.slideshow{
+			width: 700px;
+			height: 400px;
+			overflow: hidden;
+		}
+		.middle{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-40%,-40%);
+		}
+		.navigation{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translate(-50%);
+			display: flex;
+		}
+		.bar{
+			width: 50px;
+			height: 20px;
+			border: 2px solid #fff;
+			margin: 6px;
+			cursor: pointer;
+		}
+		.bar:hover{
+			background: #fff;
+		}
+		input[name="r"]{
+			position: absolute;
+			visibility: hidden;
+		}
+		.slides{
+			width: 500%;
+			height: 100%;
+			display: flex;
+		}
+		.slide{
+			width: 20%;
+			transition: 0.6s;
+		}
+		.slide img{
+			width: 100%;
+			height: 50%;
+		}
+		#r1:checked ~ .s1{
+			margin-left: 0;
+		}
+		#r2:checked ~ .s1{
+			margin-left: -20%;
+		}
+		#r3:checked ~ .s1{
+			margin-left: -40%;
+		}
+		#r4:checked ~ .s1{
+
+			margin-left: -60%;
+		}
+	</style>
+<body>
+	<style>
+		/*.tf:hover{
+			box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			transform: translate(0px,-8px); 
+		}*/
+		/*.tf2:hover{
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+			transform: translate(0px,-8px);
+		}*/
+		/*.tf3:hover{
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+			transform: translate(0px,-8px);
+		}*/
+	</style>
+
+<div class="nav"> 
+	<ul>
+
+		<img src="img/Logoo.png" height=60px width=60px style="margin-top: 4px">
+	</ul>
+	<ul>
+		<li><a href="Bestseller.html">All</a></li>
+		<li><a href="Bestseller.html">Best seller</a></li>
+		<li><a href="coontact.html#">LogIn</a></li>
+		<li><a href="Menswear.html">Fashion</a></li>
+		<li><a href="">Electronics</a></li>
+		<li><a href="">Best Offer</a></li>
+		<li><a href="">Today's Deal</a></li>
+		<li><input type="search" placeholder="Search Here" style="height: 25px; width: 300px;" ></li>
+	</ul>
+    <div class="tf">
+<table>
+	<tr>
+		<th colspan=2> Flat 60% off!</th>
+		<th style="background-color: beige"></th>
+	</tr>
+		
+	<tr>
+		<td><a href="https://www.myntra.com/"><font color="black">Clothing</font></a></td>
+		<td><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiTi4aqtI37AhWTNSsKHZ8PBwUYABABGgJzZg&sig=AOD64_0rLcEXGJEPQDoSakFwpZTM-h1ciw&q&adurl&ved=2ahUKEwi2sf6ptI37AhWq63MBHYyuDikQ0Qx6BAgEEAE"><font color="black">Jewellery</font></a></td>
+		
+	</tr>
+	<tr>
+		<td><img src="img/Cloth.png" height=150px width= 190px ></td>
+		<td><img src="img/jewellery.png" height=150px width=190px></td>
+		
+	</tr>
+	<tr>
+		<td><a href="https://www.shoppersstop.com/women-footwear/c-A2030"><font color="black">Footwear</font></a></td>
+		<td><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwj25_yQtI37AhXBkmYCHRJKCa4YABACGgJzbQ&sig=AOD64_20dwpvd1msm8eDOR9suTBMLXKXdQ&q&adurl&ved=2ahUKEwi1s_WQtI37AhWAIbcAHYDmDpoQ0Qx6BAgHEAE"><font color="black">Watches</font></a></td>
+	</tr>
+	<tr>
+		<td><img src="img/footwear.png" height=150px width=190px></td>
+		<td><img src="img/Watch.png" height=150px width=190px></td>
+	</tr>
+</table>
+<div class="tf2">
+	
+<table>
+	<tr>
+		<th colspan=2> Festive Season!! </th>
+		<th style="background-color: beige"> </th>
+
+	</tr>
+	<tr>
+		<td><a href="http://127.0.0.1:5500/Menswear.html"><font color="black">Mens Wear</font></a></td>
+		<td><a href="http://127.0.0.1:5500/Womenswear.html"><font color="black">Womens Wear</font></a></td>
+	</tr>
+	<tr>
+		<td><img src="img/Menswear.png" height=160px width=190px></td>
+		<td><img src="img/Womenswear.png" height=160px width=190px></td>
+	</tr>
+	<tr>
+		<td><a href="https://r.search.yahoo.com/_ylt=Awr1SjbzQ3VjrkUcw6u7HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1668658292/RO=10/RU=https%3a%2f%2fwww.myntra.com%2fgirls-kids-wear/RK=2/RS=Gj9vxa3axk2HJYWAyA0iSpw8xTY-"><font color="black">Kids Wear</font></a></td>
+		<td><a href="https://r.search.yahoo.com/_ylt=AwrKC0QoRHVjv6Yco5C7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1668658345/RO=10/RU=https%3a%2f%2fwww.myntra.com%2fmens-formal-wear/RK=2/RS=KeSO0Eckq9ETEb.g7gBuPaWuU6I-"><font color="black">Formal Wear.</font></a></td>
+	</tr>
+	<tr>
+		<td><img src="img/Kids wear.png" height=150px width=190px></td>
+		<td><img src="img/FORMAL WEAR.png" height=150px width=190px></td>
+	</tr>
+
+</table>
+<div class="tf3">
+<table>
+	<tr>
+		<th colspan=2><b><font size="5px">FREE FREE FREE !!</font></b></th>
+		<th style="background-color: beige"></th>
+	</tr>
+	<tr>
+		<td><img src="img/fashion world.png" height=340px width=390px ></td>
+	</tr>
+</table>
+<div class="tf4">
+<table>
+	<tr>
+		<th colspan="2"><b><font size=3px>30% OFF on Each Lipstic Brand!!</font></b></th>
+		<th style="background-color: beige"></th>
+	</tr>
+	<tr>
+		<td><img src="img/lipstick.png" height=340px width=390px></td>
+	</tr>
+</table>
+<div class="tf5">
+<table>
+	<tr>
+		<th colspan="2"><b><font size=3px>FLASH SALE!!</font></b></th>
+		<th style="background-color: beige"></th>
+	</tr>
+	<tr>
+		<td><img src="img/sale.png" height=340px width=390px></td>
+	</tr>
+</table>
+<div class="tf6">
+	<table>
+		<tr>
+			<th colspan="2"><b><font size=3px>BEST DEAL!!</font></b></th>
+			<th style="background-color: beige"></th>
+		</tr>
+		<tr>
+			<td><img src="img/best.png" height=340px width=390px></td>
+		</tr>
+	</table>
+	<div class="tf7">
+		<table>
+			<tr>
+				<th colspan="2"><b><font size=3px>HEADSETS at 30% Discount!!</font></b></th>
+				<th style="background-color: beige"></th>
+			</tr>
+			<tr>
+				<td><img src="img/headset.png" height=340px width=390px></td>
+			</tr>
+		</table>
+		<div class="tf8">
+			<table>
+				<tr>
+					<th colspan="2"><b><font size=3px> WATCHES  at low rate !!</font></b></th>
+					<th style="background-color: beige"></th>
+				</tr>
+				<tr>
+					<td><img src="img/waatch.png" height=340px width=390px></td>
+				</tr>
+			</table>
+			<div class="tf9">
+				<table>
+					<tr>
+						<th colspan="2"><b><font size=3px> END OF SEASON SALE IS HERE !!</font></b></th>
+						<th style="background-color: beige"></th>
+					</tr>
+					<tr>
+						<td><img src="img/saale.png" height=340px width=390px ></td>
+					</tr>
+				</table>
+				<div class="tf10">
+					<table>
+						<tr>
+							<th colspan="2"><b><font size="3px"></font></b></th>
+							<th style="background-color: beige"></th>
+						</tr>
+						<tr><td><img src="img/dw.png" height=370px width=390px></td></tr>
+					</table>
+					<div class="tf11">
+						<table>
+							<tr>
+							<th colspan="2"></th>
+							<th style="background-color:beige"></th>
+							</tr>
+							<tr><td><img src="img/az.png" height=370px width=390px></td></tr>
+						</table>
+						<div class="tf12">
+							<table>
+								<tr>
+									<th colspan="2"></th>
+									<th style="background-color: beige;"></th>
+								</tr>
+								<tr><td><a href="coontact.html#"><img src="img/by.png" height=370px width=390px></a></td></tr>
+							</table>
+
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+	
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slidershow middle">
+	<div class="slides">
+		<input type="radio" name="r" id="r1" checked>
+		<input type="radio" name="r" id="r2">
+		<input type="radio" name="r" id="r3">
+		<input type="radio" name="r" id="r4">
+		<div class="slide s1">
+			<img src="img/Sparkle.png" style="margin-top:350px" alt="">
+			
+		</div>
+		<div class="slide">
+			<img src="img/photo.png" style="margin-top: 350px" alt="">
+			
+		</div>
+		<div class="slide">
+			<img src="img/pic.png" style="margin-top: 350px" alt="">
+			
+		</div>
+		<div class="slide">
+			<img src="img/gif.png" style="margin-top: 350px" alt="">
+			
+		</div>
+		
+	</div>
+	<div class="navigation">
+		<label for="r1" class="bar" style="margin-top: 450px"></label>
+		<label for="r2" class="bar" style="margin-top: 450px"></label>
+		<label for="r3" class="bar" style="margin-top: 450px"></label>
+		<label for="r4" class="bar" style="margin-top: 450px"></label>
+	</div>
+	
+</div>
+</body>
+</html>
